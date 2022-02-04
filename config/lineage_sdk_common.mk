@@ -1,10 +1,8 @@
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.audio.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.audio.xml \
     vendor/lineage/config/permissions/org.lineageos.globalactions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.globalactions.xml \
     vendor/lineage/config/permissions/org.lineageos.hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.hardware.xml \
     vendor/lineage/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml \
-    vendor/lineage/config/permissions/org.lineageos.performance.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.performance.xml \
     vendor/lineage/config/permissions/org.lineageos.profiles.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.profiles.xml \
     vendor/lineage/config/permissions/org.lineageos.settings.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.settings.xml \
     vendor/lineage/config/permissions/org.lineageos.trust.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.trust.xml
@@ -13,10 +11,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
     org.lineageos.platform
-
-# JNI Libraries
-PRODUCT_PACKAGES += \
-    liblineage-sdk_platform_jni
 
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
